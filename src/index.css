@@ -1,13 +1,107 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-todo {
+  background-color: #C479D3;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.new-task-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.new-task-form input {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(70% - 10px);
+}
+
+.new-task-form button {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.task {
+  position: relative;
+  border: 1px solid #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.task .delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: black;
+  background-color: #fff;;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.subtask-options {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.add-subtask,
+.done-subtask {
+  cursor: pointer;
+  margin-left: 10px;
+  color: #28a745;
+  
+}
+
+.subtask.done {
+  text-decoration: line-through;
+  color: burlywood;
+}
+.task-heading {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtask-heading {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
